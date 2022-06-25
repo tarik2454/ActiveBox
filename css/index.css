@@ -59,6 +59,10 @@ p {
    border-bottom: 1px solid #515369;
 }
 
+.header__logo {
+    cursor: pointer;
+}
+
 /*-- Nav styles --*/
 .nav {
    display: flex;

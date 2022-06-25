@@ -1,52 +1,44 @@
 $(function() {
 
-   /* Fixed Header */
-   let header = $("#header");
-   let intro = $("#intro");
+   const header = $("#header");
+   const intro = $("#intro");
    let introH = intro.innerHeight();
-   let scrollPos = $(window).scrollTop();
-   let nav = $("#nav");
-   let navToggle = $("#navToggle");
+   const nav = $("#nav");
+   const navToggle = $("#navToggle");
 
-   checkScroll(scrollPos, introH);
 
+    // -- fixed header 
    $(window).on("scroll resize", function() {
-       introH = intro.innerHeight();
-       scrollPos = $(this).scrollTop();
-
-       checkScroll(scrollPos, introH);
+       if( window.pageYOffset > introH ) {
+        header.addClass("fixed");
+       } else {
+        header.removeClass("fixed");
+       }
    });
 
-   function checkScroll(scrollPos, introH) {
-       if( scrollPos > introH ) {
-           header.addClass("fixed");
-       } else {
-           header.removeClass("fixed");
-       }
-   }
 
-   /* Smooth scroll */
+   // -- scroll element
    $("[data-scroll]").on("click", function(event) {
        event.preventDefault();
 
        let elementId = $(this).data('scroll');
        let elementOffset = $(elementId).offset().top;
-
        nav.removeClass("show");
 
        $("html, body").animate({
            scrollTop: elementOffset - 70
-       }, 700);
+       }, 600);
    });
 
-   /* Nav Toggle */
+
+   // -- nav toggle 
    navToggle.on("click", function(event) {
        event.preventDefault();
-
        nav.toggleClass("show");
    });
 
-   /* Reviews: https://kenwheeler.github.io/slick/ */
+
+   // reviews: https://kenwheeler.github.io/slick/ */
    let slider = $("#reviewsSlider");
 
    slider.slick({
