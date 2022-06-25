@@ -6,7 +6,7 @@ Project Link: [https://tarik2454.github.io/responsive-website-Active-Box/](https
 
 * HTML
 * CSS
-* JS(jQuery)
+* jQuery
 
 ## Contact:
 
