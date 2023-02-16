@@ -1,4 +1,4 @@
-# responsive-website-Active-Box
+# Responsive website Active-Box
 
 Project Link: [https://tarik2454.github.io/responsive-website-Active-Box/](https://tarik2454.github.io/responsive-website-Active-Box/)
 
@@ -10,4 +10,5 @@ Project Link: [https://tarik2454.github.io/responsive-website-Active-Box/](https
 
 ## Contact:
 
-* email - tarik2454@gmail.com
+Telegram: <https://t.me/tarik_2454>  
+Email: <tarik2454@gmail.com>
